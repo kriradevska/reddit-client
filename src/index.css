@@ -1,3 +1,5 @@
+/* Global styles */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,7 +19,10 @@ code {
   align-items: center;
   align-content: center;
   justify-content: center;
+  flex-direction: column;
 }
+
+/* Header styles */
 
 .header {
   width: 90%;
@@ -35,4 +40,31 @@ code {
   width: auto;
   justify-content: center;
   align-self: center;
+}
+
+/* Container styles */
+
+.container {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 2.7%;
+}
+
+.posts {
+  width: 65%;
+  background-color: gray;
+  height: 300px; /*hard codded for design purposes*/
+}
+
+.subredits {
+  width: 32%;
+  background-color: #ffece6;
+  height: 300px; /*hard codded for design purposes*/
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #3D3D3D;
 }
