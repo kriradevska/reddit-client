@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.header {
+  width: 90%;
+  max-height: 6em;
+  background-color: #ff4500;
+  margin-top: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.logo {
+  height: 6em;
+  width: auto;
+  justify-content: center;
+  align-self: center;
+}
