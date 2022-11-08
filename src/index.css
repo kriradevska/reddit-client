@@ -21,7 +21,7 @@ code {
 
 .header {
   width: 90%;
-  max-height: 6em;
+  max-height: 7em;
   background-color: #ff4500;
   margin-top: 0.5%;
   display: flex;
@@ -31,7 +31,7 @@ code {
 }
 
 .logo {
-  height: 6em;
+  height: 7em;
   width: auto;
   justify-content: center;
   align-self: center;
