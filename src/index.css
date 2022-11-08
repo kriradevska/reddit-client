@@ -61,10 +61,12 @@ code {
   width: 32%;
   background-color: #ffece6;
   height: 300px; /*hard codded for design purposes*/
+  border-radius: 20px;
 }
 
 h2 {
-  text-align: center;
+  text-align: start;
   font-family: 'Open Sans', sans-serif;
   color: #3D3D3D;
+  padding-left: 7%;
 }

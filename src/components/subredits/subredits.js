@@ -4,7 +4,7 @@ export const Subredits = () => {
 
     return(
         <div className="subredits">
-            <h2>Subredits</h2>
+            <h2>Subreddits</h2>
         </div>
     )
 }
