@@ -91,6 +91,14 @@ h2 {
   justify-content: center; 
 }
 
+input {
+  border: 2px solid #ffb599;
+  margin: 5px 0 10px;
+  font-size: 1rem;
+  color: #656880;
+  height: 2em;
+}
+
 
 /* --- Breakpoints --- */
 
