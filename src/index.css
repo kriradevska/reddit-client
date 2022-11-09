@@ -20,6 +20,7 @@ code {
   align-content: center;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* Header styles */
@@ -46,9 +47,11 @@ code {
 
 .container {
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 90%;
   margin-top: 2.7%;
+    
 }
 
 .posts {
@@ -58,15 +61,65 @@ code {
 }
 
 .subredits {
-  width: 32%;
-  background-color: #ffece6;
-  height: 300px; /*hard codded for design purposes*/
-  border-radius: 20px;
+  display: flex;
+    flex-direction: column;
+    width: 32%;
+    background-color: #ffece6;
+    height: 300px; /* hard coded for design purposes */
+    border-radius: 20px;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 h2 {
-  text-align: start;
+  display: flex;
   font-family: 'Open Sans', sans-serif;
   color: #3D3D3D;
   padding-left: 7%;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+
+.searchBar_container {
+  display: flex;
+  height: fit-content;
+}
+
+.searchBar {
+  display: inline-flex;
+  justify-content: center; 
+}
+
+
+/* --- Breakpoints --- */
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .subredits {
+    width: 80%;
+    margin-bottom: 3%;
+  }
+
+  .posts {
+    width: 90%;
+  }
+
+  .header {
+    height: 5em;
+  }
+
+  .logo {
+    height: 5em;
+  }
+} 
+
+@media only screen and (max-width: 500px) {
+  .subredits {
+    width: 90%;
+  }
 }
