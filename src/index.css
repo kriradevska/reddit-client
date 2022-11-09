@@ -54,11 +54,16 @@ code {
     
 }
 
+/* Posts style */
+
 .posts {
   width: 65%;
   background-color: gray;
   height: 300px; /*hard codded for design purposes*/
 }
+
+
+/* Subreddits styles */
 
 .subredits {
   display: flex;
@@ -68,7 +73,7 @@ code {
     height: 300px; /* hard coded for design purposes */
     border-radius: 20px;
     align-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -92,11 +97,12 @@ h2 {
 }
 
 input {
-  border: 2px solid #ffb599;
+  border: 2px solid #3D3D3D;
   margin: 5px 0 10px;
   font-size: 1rem;
   color: #656880;
   height: 2em;
+  border-radius: 5px;
 }
 
 
