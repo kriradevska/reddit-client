@@ -10,7 +10,7 @@ export const getSubredits = createAsyncThunk(
     }
 )
 
-const subredditSlice = createSlice({
+const subredditsSlice = createSlice({
     name: "subreddits",
     initialState: {
         subreddits: [], 
@@ -19,7 +19,28 @@ const subredditSlice = createSlice({
     },
     reducers: {
         getSubreddit: (state, action) => {
-            state.subreddits.push(action.payload.data.children)
+            state.subreddits.push(action.payload)
+        }
+    },
+    extraReducers: {
+        [getSubredits.pending]: (action, payload) => {
+            state.isLoading = true;
+            state.hasError = false;
+        },
+        [getSubredits.fulfilled]: (action, payload) => {
+            state.subreddits.push(action.payload);
+            state.isLoading = false;
+            state.hasError = false;
+        },
+        [getSubredits.rejected]: (action, payload) => {
+            stat.isLoading = false;
+            state.hasError = true;
         }
     }
 })
+
+export const {
+    getSubreddit
+} = subredditsSlice.actions;
+
+export default subredditsSlice.reducer;
